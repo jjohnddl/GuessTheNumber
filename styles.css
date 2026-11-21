@@ -1,0 +1,102 @@
+body {
+    background: radial-gradient(circle, #212122, #131313);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.looks{
+ position: relative;
+   width: 350px;
+  height: 330px;
+  background-color: #5d5d5d9d; /* Blue background */
+  color: white;              /* White text */
+  padding: 20px;             /* Inner spacing */
+  border-radius: 8px;  
+  position: relative;      /* Rounded corners */
+   justify-content: center;
+    align-items: center;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+#range{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+    .guessbtn {
+        margin-top: 50px;
+        margin-left: 65px;
+      padding: 10px 20px;
+      background-color: rgb(255, 255, 255);
+      color: #000000;
+      border:3px solid black;
+      border-radius: 10px;
+      border-color: #131313;
+      
+      font-weight: bold;
+      cursor: pointer;   
+       transition: background-color 0.2s ease, transform 0.2s ease;
+                 /* Shows hand icon on hover */
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    /* Subtle hover effect */
+    .guessbtn:hover {
+    background-color: #e2e8f0;
+    transform: scale(1.05);
+    cursor: pointer;
+       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+  #userguess{
+    height:40px;
+    width: 220px;
+    border-radius: 10px;
+    font-size: x-large;
+    color: black;
+    background-color: white;
+      border:3px solid black;
+
+
+}
+#Pay{
+
+   
+
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    border-radius: 8px;
+      border:3px solid black;
+    font-weight: bold;
+    font-size: 1rem;
+    z-index: 10;
+    width: 85%;
+    max-width: 300px;
+    text-align: center;
+    white-space: normal;
+display: none;
+ animation: popIn 0.3s ease-out;
+}
+@keyframes popIn {
+  from {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+/* #Pay.show {
+    opacity: 1;
+    transform: translateY(0);
+} */
